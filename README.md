@@ -142,6 +142,8 @@ The Power BI report contains three analytical layers:
 
 ## 1️⃣ Management Overview
 
+![Management Overview](https://github.com/MayankAgrawal099/Motorsport_Operations_and_Strategy_Business_Analysis/blob/main/Dashboard/Dashboard%20Preview/Management_Overview.png)
+
 Focus:
 - Cost per Point trend
 - Reliability vs Scoring
@@ -152,6 +154,8 @@ Provides macro-level executive insights.
 ---
 
 ## 2️⃣ Engineering Performance Insights
+
+![Engineering Performance Insights](https://github.com/MayankAgrawal099/Motorsport_Operations_and_Strategy_Business_Analysis/blob/main/Dashboard/Dashboard%20Preview/Engineering_Performance_Insights.png)
 
 Focus:
 - Average Lap Time trend
@@ -164,6 +168,8 @@ Isolates technical performance drivers.
 ---
 
 ## 3️⃣ Operations Overview
+
+![Operations Overview](https://github.com/MayankAgrawal099/Motorsport_Operations_and_Strategy_Business_Analysis/blob/main/Dashboard/Dashboard%20Preview/Operations_Overview.png)
 
 Focus:
 - Average Pit Time trend
