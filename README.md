@@ -195,11 +195,38 @@ The project implements:
 - Executive dashboard storytelling
 - Advanced DAX measure engineering
 
+---
+
 # ⚠️ Notes
 
 - Dataset source: Kaggle (F1 World Championship dataset)
 - Cost values are modeled assumptions for analytical simulation
 - This project is built for educational and portfolio demonstration purposes
+
+---
+
+# 📊 Business Findings
+
+The analytical model reveals several strategic insights:
+
+### 1️⃣ Cost Efficiency Improved Post Hybrid Era
+Cost per point decreased steadily after 2016, suggesting improved development allocation efficiency across teams.
+
+### 2️⃣ Lap Consistency Strongly Correlates With Reliability
+Teams with lower lap time volatility consistently demonstrate higher reliability scores and improved points per race.
+
+### 3️⃣ Operational Stability Impacts Scoring
+Higher pit time volatility is associated with increased failure rates and reduced competitive positioning.
+
+### 4️⃣ High Spending Does Not Guarantee Performance
+Certain teams demonstrate above-field cost per point without proportional gains in scoring efficiency.
+
+### 5️⃣ Trade-Off Between Aggressive Performance and Stability
+Teams optimizing for lap time often experience reliability risk, indicating a balance between peak performance and durability.
+
+These findings illustrate the strategic tension between cost, engineering performance, and operational execution.
+
+---
 
 # 👨‍💻 Author
 
