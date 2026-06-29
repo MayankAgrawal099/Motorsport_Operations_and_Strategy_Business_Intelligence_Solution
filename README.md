@@ -131,7 +131,7 @@ Formula 1 data into an executive-ready Business Intelligence solution.
 
 ------------------------------------------------------------------------
 
-# 🗄️ ER Diagram / Semantic Data Model
+# 🗄️ ER Diagram
 
 ![ER Diagram](https://github.com/MayankAgrawal099/Motorsport_Operations_and_Strategy_Business_Analysis/blob/main/Diagram/ER_Diagram.png)
 
