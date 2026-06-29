@@ -49,7 +49,7 @@ Layer → Semantic Model → Executive Decision Support**
 
 ### Operations Overview
 
-![Operations Overview](https://github.com/MayankAgrawal099/Motorsport_Operations_and_Strategy_Business_Analysis/blob/main/Dashboard/Dashboard%20Preview/Operations_Overview.png)
+![Operations Overview](https://github.com/MayankAgrawal099/Motorsport_Operations_and_Strategy_Business_Intelligence_Solution/blob/main/Dashboard/Dashboard%20Preview/Operations_Overview.png)
 
 ------------------------------------------------------------------------
 
