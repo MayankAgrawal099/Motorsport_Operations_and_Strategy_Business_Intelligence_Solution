@@ -156,8 +156,6 @@ filtering, KPI aggregation, and cross-dashboard analysis.
 
 # 🛠️ Technology Stack
 
-  ## 🛠️ Technology Stack
-
 | Technology | Role | Why it was Chosen |
 |------------|------|-------------------|
 | **PostgreSQL** | Analytical Data Warehouse | Chosen as the central repository for storing, validating, and transforming raw motorsport data into an optimized analytical model. Its support for advanced SQL, relational integrity, and scalable querying makes it well suited for Business Intelligence workflows. |
