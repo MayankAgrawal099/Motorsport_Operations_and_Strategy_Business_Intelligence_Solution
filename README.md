@@ -1,19 +1,176 @@
-# 🏎️ Motorsport Operations and Strategy Business Analysis
+# 🏎️ Motorsport Operations and Strategy Business Intelligence Solution
 
-A full-stack Business Intelligence project analyzing Formula 1 team performance across **Management, Engineering, and Operations** using PostgreSQL and Power BI.
+## Executive Summary
 
-This repository demonstrates an end-to-end analytics workflow:
-- Data sourcing
-- Dimensional modeling (Star Schema)
-- KPI engineering in SQL
-- Field benchmarking using DAX
-- Executive dashboard development
+This repository presents an end-to-end **Business Intelligence
+solution** built around Formula 1 motorsport data. Rather than serving
+as a dashboard-only project, it demonstrates how raw operational data
+can be transformed into executive decision support through an
+enterprise-inspired analytics pipeline.
 
----
+The solution integrates PostgreSQL, SQL, dimensional modeling, Power BI,
+and DAX to evaluate financial efficiency, engineering consistency,
+operational execution, and strategic trade-offs across Formula 1
+constructors.
+
+The analytical architecture follows a layered BI approach:
+
+**Raw Data → PostgreSQL → Analytical Data Warehouse → Business Logic
+Layer → Semantic Model → Executive Decision Support**
+
+### Project Highlights
+
+-   End-to-end Business Intelligence architecture
+-   PostgreSQL analytical data warehouse
+-   Star schema dimensional model
+-   SQL-driven KPI engineering
+-   Interactive Power BI semantic model
+-   Executive decision support dashboards
+-   Motorsport strategy and operations analytics
+
+------------------------------------------------------------------------
+
+# 📊 Dashboard Preview
+
+> **Dashboard screenshots will be added here.**
+
+### Management Overview
+
+![Management Overview](https://github.com/MayankAgrawal099/Motorsport_Operations_and_Strategy_Business_Analysis/blob/main/Dashboard/Dashboard%20Preview/Management_Overview.png)
+
+
+------------------------------------------------------------------------
+
+### Engineering Performance Insights
+
+![Engineering Performance Insights](https://github.com/MayankAgrawal099/Motorsport_Operations_and_Strategy_Business_Analysis/blob/main/Dashboard/Dashboard%20Preview/Engineering_Performance_Insights.png)
+
+------------------------------------------------------------------------
+
+### Operations Overview
+
+![Operations Overview](https://github.com/MayankAgrawal099/Motorsport_Operations_and_Strategy_Business_Analysis/blob/main/Dashboard/Dashboard%20Preview/Operations_Overview.png)
+
+------------------------------------------------------------------------
+
+# 🏗️ Solution Architecture
+
+![Architecture Diagram](https://github.com/MayankAgrawal099/Motorsport_Operations_and_Strategy_Business_Analysis/blob/main/Diagram/Architecture_Diagram_Preview.png)
+
+The architecture separates data storage, business logic, semantic modeling, and visualization into independent layers. This mirrors enterprise Business Intelligence systems, ensuring scalability, maintainability, and consistent KPI definitions across all dashboards.
+
+This solution follows a layered Business Intelligence architecture
+inspired by enterprise analytics platforms.
+
+  -----------------------------------------------------------------------
+  Layer                 Responsibility
+  --------------------- -------------------------------------------------
+  Raw Motorsport        Source data ingestion
+  Dataset               
+
+  PostgreSQL            Data storage, cleansing, validation,
+                        normalization
+
+  Analytical Data       Dimensional modeling using a Star Schema
+  Warehouse             
+
+  Business Logic Layer  KPI engineering, aggregations and analytical SQL
+                        views
+
+  Power BI Semantic     Relationships, DAX measures and calculations
+  Model                 
+
+  Executive Decision    Interactive dashboards for strategic decision
+  Support               making
+  -----------------------------------------------------------------------
+
+------------------------------------------------------------------------
+
+# 🎯 Business Problem
+
+Modern motorsport organizations generate massive volumes of operational,
+engineering, and performance data. While race results provide outcomes,
+they rarely explain *why* teams consistently succeed or fail.
+
+Decision-makers require an integrated analytical solution capable of
+answering questions such as:
+
+-   Which teams convert investment into championship points most
+    efficiently?
+-   Does engineering consistency correlate with competitive performance?
+-   How does operational execution influence race outcomes?
+-   Which strategic trade-offs maximize competitive advantage?
+-   Where should management prioritize future investment?
+
+This project addresses these challenges by transforming historical
+Formula 1 data into an executive-ready Business Intelligence solution.
+
+------------------------------------------------------------------------
+
+# ⭐ Key Features
+
+-   Executive Decision Support dashboards
+-   Enterprise-inspired analytical architecture
+-   Star Schema dimensional data warehouse
+-   SQL-centric Business Logic Layer
+-   KPI engineering using PostgreSQL
+-   Interactive Power BI Semantic Model
+-   Dynamic benchmarking with DAX
+-   Multi-season strategic analysis
+
+### Engineered KPIs
+
+-   Cost per Point
+-   Reliability Score
+-   Failure Rate
+-   Average Lap Time
+-   Lap Time Volatility
+-   Average Pit Time
+-   Pit Stop Consistency
+-   Performance Benchmarking
+
+------------------------------------------------------------------------
+
+# 🗄️ ER Diagram / Semantic Data Model
+
+![ER Diagram](https://github.com/MayankAgrawal099/Motorsport_Operations_and_Strategy_Business_Analysis/blob/main/Diagram/ER_Diagram.png)
+
+The solution adopts a Star Schema optimized for analytical workloads.
+
+### Dimension Tables
+
+-   Dim Constructor
+-   Dim Race
+
+### Analytical Fact Tables
+
+-   Management Intelligence
+-   Engineering Intelligence
+-   Operations Intelligence
+-   Strategic Trade-off Analysis
+
+The semantic model uses one-to-many relationships to ensure consistent
+filtering, KPI aggregation, and cross-dashboard analysis.
+
+------------------------------------------------------------------------
+
+# 🛠️ Technology Stack
+
+  Technology                 Role                                Why it was chosen
+  -------------------------- ----------------------------------- -----------------------------------
+  PostgreSQL                 Analytical Data Warehouse           Chosen as the central repository for storing, validating, and transforming raw motorsport data into an optimized analytical model. Its support for advanced SQL and relational modeling makes it ideal for Business Intelligence workflows.
+  SQL                        Business Logic & KPI Engineering    Used to centralize business logic, build dimensional tables, create analytical views, and engineer KPIs before visualization, ensuring a single source of truth across the solution.
+  Power BI                   Semantic Modeling & Visualization   Selected for its enterprise-grade semantic modeling, interactive reporting capabilities, and seamless integration with PostgreSQL for executive decision support dashboards.
+  DAX                        Dynamic Calculations                Used to build context-aware measures, dynamic benchmarks, and comparative KPIs that respond instantly to user interactions and dashboard filters.
+  Power Query                Data Ingestion                     Utilized for connecting to PostgreSQL, shaping imported data, and preparing the semantic model while minimizing manual preprocessing within reports.
+  Git & GitHub               Version Control                    Used to manage source code, track project evolution, maintain documentation, and showcase the complete Business Intelligence solution in a professional portfolio.
+  Kaggle Formula 1 Dataset   Source Data                        Chosen as a comprehensive historical motorsport dataset containing race results, constructors, drivers, lap times, and pit stop data, providing sufficient depth for realistic analytical modeling and KPI engineering.
+
+------------------------------------------------------------------------
 
 # 📂 Repository Structure
 
-```
+``` text
 Motorsport_Operations_and_Strategy_Business_Analysis/
 │
 ├── Dataset/
@@ -36,6 +193,11 @@ Motorsport_Operations_and_Strategy_Business_Analysis/
 │ ├── 07_final_checks.sql
 │ └── README.md
 │
+├── Diagram/
+│   ├── Architecture_Diagram_Preview.png
+│   ├── Architecture_Diagram.drawio
+│   └── ER_Diagram.png
+│
 ├── Dashboards/
 │ ├── Motorsport_Dashboard.pbix
 │ ├── Dashboard Preview/
@@ -48,29 +210,99 @@ Motorsport_Operations_and_Strategy_Business_Analysis/
 └── README.md
 ```
 
----
+The repository is organized to mirror a real-world Business Intelligence
+workflow where SQL acts as the **single source of truth**, while Power
+BI functions as the executive presentation layer.
 
-# 🎯 Project Objective
+------------------------------------------------------------------------
 
-This project evaluates strategic motorsport performance by answering:
+# 📈 Dashboard Pages
 
-- Are teams spending efficiently?
-- Does engineering consistency drive reliability?
-- How does operational execution impact results?
-- What trade-offs exist between cost, performance, and stability?
+## Executive Overview
 
-The solution integrates financial, technical, and operational KPIs into a unified analytical framework.
+Provides management-level visibility into financial efficiency,
+championship performance, and strategic benchmarking.
 
----
+**Primary KPIs**
 
-# 🛠️ Tech Stack
+-   Total Cost
+-   Cost per Point
+-   Reliability Score
+-   Championship Points
+-   Team Benchmarking
 
-- **PostgreSQL** — Data modeling and KPI view creation
-- **SQL** — Star schema design and aggregations
-- **Power BI** — Multi-page dashboard development
-- **DAX** — Selected vs Field benchmarking logic
+------------------------------------------------------------------------
 
----
+## Engineering Intelligence
+
+Evaluates technical consistency and engineering competitiveness.
+
+**Primary KPIs**
+
+-   Average Lap Time
+-   Lap Time Standard Deviation
+-   Reliability Trend
+-   Performance Benchmark
+
+------------------------------------------------------------------------
+
+## Operations Intelligence
+
+Measures operational execution throughout the season.
+
+**Primary KPIs**
+
+-   Average Pit Time
+-   Pit Stop Consistency
+-   Failure Rate
+-   Operational Efficiency
+
+------------------------------------------------------------------------
+
+# 📊 Business Findings
+
+### Financial efficiency outweighs absolute spending
+
+Higher expenditure does not consistently produce stronger championship
+performance. Efficient allocation of resources delivers greater
+competitive value.
+
+### Engineering consistency improves competitive outcomes
+
+Lower lap-time variability strongly correlates with improved reliability
+and sustained championship performance.
+
+### Operational excellence creates measurable advantage
+
+Consistent pit-stop execution and lower failure rates contribute
+directly to improved race outcomes.
+
+### Reliability drives long-term competitiveness
+
+Mechanical consistency has a greater influence on sustained success than
+isolated peak performance.
+
+### Strategic trade-offs are quantifiable
+
+The solution enables management to evaluate the balance between
+investment, engineering capability, and operational execution to
+identify areas with the highest potential return.
+
+------------------------------------------------------------------------
+
+# 🚀 Future Improvements
+
+-   Driver-level intelligence
+-   Budget Cap era analytics
+-   Predictive race outcome modeling
+-   Reliability forecasting using Machine Learning
+-   Monte Carlo race strategy simulation
+-   Live Formula 1 API integration
+-   Automated ETL pipelines
+-   Power BI Service deployment
+-   CI/CD dashboard publishing
+
+------------------------------------------------------------------------
 
 # 🚀 How To Run This Project
 
@@ -132,109 +364,39 @@ Dashboards/Motorsport_Dashboard.pbix
 
 All dashboards will load from the SQL views.
 
----
+------------------------------------------------------------------------
 
-# 📊 Dashboard Overview
+## Skills Demonstrated
 
-The Power BI report contains three analytical layers:
+• Business Intelligence
 
----
+• SQL Development
 
-## 1️⃣ Management Overview
+• PostgreSQL
 
-![Management Overview](https://github.com/MayankAgrawal099/Motorsport_Operations_and_Strategy_Business_Analysis/blob/main/Dashboard/Dashboard%20Preview/Management_Overview.png)
+• Star Schema Design
 
-Focus:
-- Cost per Point trend
-- Reliability vs Scoring
-- Financial efficiency benchmarking
+• Data Modeling
 
-Provides macro-level executive insights.
+• ETL
 
----
+• KPI Engineering
 
-## 2️⃣ Engineering Performance Insights
+• Power BI
 
-![Engineering Performance Insights](https://github.com/MayankAgrawal099/Motorsport_Operations_and_Strategy_Business_Analysis/blob/main/Dashboard/Dashboard%20Preview/Engineering_Performance_Insights.png)
+• DAX
 
-Focus:
-- Average Lap Time trend
-- Lap Time Volatility (Std Dev)
-- Reliability vs Consistency trade-off
-- Team-level benchmarking
+• Dashboard Design
 
-Isolates technical performance drivers.
+• Executive Reporting
 
----
+• Business Analytics
 
-## 3️⃣ Operations Overview
-
-![Operations Overview](https://github.com/MayankAgrawal099/Motorsport_Operations_and_Strategy_Business_Analysis/blob/main/Dashboard/Dashboard%20Preview/Operations_Overview.png)
-
-Focus:
-- Average Pit Time trend
-- Pit Stop consistency
-- Failure rate analysis
-- Operational efficiency comparison
-
-Evaluates race execution discipline.
-
----
-
-# 🧠 Analytical Architecture
-
-The project implements:
-- Star schema modeling
-- Selected Team vs Field Average benchmarking
-- Gap measures (Selected – Field)
-- Multi-season trend analysis
-- Trade-off visualization
-- Dynamic slicer-based filtering
-
----
-
-# 📈 Key Concepts Demonstrated
-
-- Dimensional data modeling
-- Performance benchmarking
-- Cost-efficiency evaluation
-- Strategic trade-off analysis
-- Executive dashboard storytelling
-- Advanced DAX measure engineering
-
----
-
-# ⚠️ Notes
-
-- Dataset source: Kaggle (F1 World Championship dataset)
-- Cost values are modeled assumptions for analytical simulation
-- This project is built for educational and portfolio demonstration purposes
-
----
-
-# 📊 Business Findings
-
-The analytical model reveals several strategic insights:
-
-### 1️⃣ Cost Efficiency Improved Post Hybrid Era
-Cost per point decreased steadily after 2016, suggesting improved development allocation efficiency across teams.
-
-### 2️⃣ Lap Consistency Strongly Correlates With Reliability
-Teams with lower lap time volatility consistently demonstrate higher reliability scores and improved points per race.
-
-### 3️⃣ Operational Stability Impacts Scoring
-Higher pit time volatility is associated with increased failure rates and reduced competitive positioning.
-
-### 4️⃣ High Spending Does Not Guarantee Performance
-Certain teams demonstrate above-field cost per point without proportional gains in scoring efficiency.
-
-### 5️⃣ Trade-Off Between Aggressive Performance and Stability
-Teams optimizing for lap time often experience reliability risk, indicating a balance between peak performance and durability.
-
-These findings illustrate the strategic tension between cost, engineering performance, and operational execution.
-
----
+------------------------------------------------------------------------
 
 # 👨‍💻 Author
 
-Mayank Anil Agrawal
+**Mayank Anil Agrawal**
+
+Aspiring Business Intelligence & Data Analyst specializing in SQL,
+PostgreSQL, Power BI, Data Modeling, and Business Intelligence.
