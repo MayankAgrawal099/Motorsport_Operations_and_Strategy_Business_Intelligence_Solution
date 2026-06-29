@@ -156,15 +156,17 @@ filtering, KPI aggregation, and cross-dashboard analysis.
 
 # 🛠️ Technology Stack
 
-  Technology                 Role                                Why it was chosen
-  -------------------------- ----------------------------------- -----------------------------------
-  PostgreSQL                 Analytical Data Warehouse           Chosen as the central repository for storing, validating, and transforming raw motorsport data into an optimized analytical model. Its support for advanced SQL and relational modeling makes it ideal for Business Intelligence workflows.
-  SQL                        Business Logic & KPI Engineering    Used to centralize business logic, build dimensional tables, create analytical views, and engineer KPIs before visualization, ensuring a single source of truth across the solution.
-  Power BI                   Semantic Modeling & Visualization   Selected for its enterprise-grade semantic modeling, interactive reporting capabilities, and seamless integration with PostgreSQL for executive decision support dashboards.
-  DAX                        Dynamic Calculations                Used to build context-aware measures, dynamic benchmarks, and comparative KPIs that respond instantly to user interactions and dashboard filters.
-  Power Query                Data Ingestion                     Utilized for connecting to PostgreSQL, shaping imported data, and preparing the semantic model while minimizing manual preprocessing within reports.
-  Git & GitHub               Version Control                    Used to manage source code, track project evolution, maintain documentation, and showcase the complete Business Intelligence solution in a professional portfolio.
-  Kaggle Formula 1 Dataset   Source Data                        Chosen as a comprehensive historical motorsport dataset containing race results, constructors, drivers, lap times, and pit stop data, providing sufficient depth for realistic analytical modeling and KPI engineering.
+  ## 🛠️ Technology Stack
+
+| Technology | Role | Why it was Chosen |
+|------------|------|-------------------|
+| **PostgreSQL** | Analytical Data Warehouse | Chosen as the central repository for storing, validating, and transforming raw motorsport data into an optimized analytical model. Its support for advanced SQL, relational integrity, and scalable querying makes it well suited for Business Intelligence workflows. |
+| **SQL** | Business Logic & KPI Engineering | Used to centralize business logic, create dimension and fact tables, engineer KPIs, and build analytical views. This ensures the database serves as the single source of truth before data reaches the reporting layer. |
+| **Power BI** | Semantic Modeling & Visualization | Selected for its enterprise-grade semantic modeling, interactive dashboards, and seamless integration with PostgreSQL. It enables business users to explore insights through dynamic filtering and executive reporting. |
+| **DAX** | Dynamic Calculations | Used to develop context-aware measures, dynamic benchmarks, and advanced KPIs that automatically adapt to user selections and report filters. |
+| **Power Query** | Data Ingestion & Transformation | Utilized to connect with PostgreSQL, perform lightweight data shaping, and prepare the semantic model while keeping major transformations within the SQL layer. |
+| **Git & GitHub** | Version Control & Collaboration | Used to manage source code, track project evolution, maintain comprehensive documentation, and present the complete Business Intelligence solution as a professional portfolio project. |
+| **Kaggle Formula 1 Dataset** | Source Data | Chosen for its comprehensive historical Formula 1 data, including constructors, races, lap times, pit stops, and results, providing a realistic foundation for analytical modeling and KPI engineering. |
 
 ------------------------------------------------------------------------
 
